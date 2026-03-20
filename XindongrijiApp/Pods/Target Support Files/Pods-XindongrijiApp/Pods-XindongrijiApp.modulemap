@@ -1,6 +1,0 @@
-framework module Pods_XindongrijiApp {
-  umbrella header "Pods-XindongrijiApp-umbrella.h"
-
-  export *
-  module * { export * }
-}

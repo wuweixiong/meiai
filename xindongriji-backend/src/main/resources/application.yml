@@ -1,0 +1,26 @@
+# xindongriji-backend configuration for xindongriji-project
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/xindongriji?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+
+jwt:
+  secret: change-me-xindongriji-backend-32bytes-minimum
+  access-token-expire-seconds: 7200
+  refresh-token-expire-seconds: 2592000
+
+logging:
+  file:
+    name: logs/xindongriji-backend/app.log

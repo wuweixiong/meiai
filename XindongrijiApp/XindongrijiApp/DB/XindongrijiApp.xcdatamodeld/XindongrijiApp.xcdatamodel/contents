@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23504" systemVersion="24A335" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="DiaryCache" representedClassName="NSManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="diaryId" optional="NO" attributeType="Integer 64" defaultValueString="0"/>
+        <attribute name="pendingAction" optional="YES" attributeType="String"/>
+        <attribute name="tagsJson" optional="YES" attributeType="Binary"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date"/>
+    </entity>
+    <entity name="UserCache" representedClassName="NSManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date"/>
+        <attribute name="userId" optional="NO" attributeType="Integer 64" defaultValueString="0"/>
+    </entity>
+    <entity name="PendingDiaryOperation" representedClassName="NSManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt" optional="YES" attributeType="Date"/>
+        <attribute name="operationId" optional="YES" attributeType="String"/>
+        <attribute name="payloadJson" optional="YES" attributeType="Binary"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="DiaryCache" positionX="-150" positionY="-40" width="128" height="164"/>
+        <element name="UserCache" positionX="108" positionY="10" width="128" height="89"/>
+        <element name="PendingDiaryOperation" positionX="380" positionY="10" width="128" height="104"/>
+    </elements>
+</model>

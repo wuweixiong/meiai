@@ -1,0 +1,14 @@
+# XindongrijiApp Podfile
+platform :ios, '15.0'
+use_frameworks!
+
+project 'XindongrijiApp.xcodeproj'
+
+target 'XindongrijiApp' do
+  pod 'AFNetworking', '~> 4.0'
+  pod 'MJExtension', '~> 3.4'
+  pod 'MBProgressHUD', '~> 1.2'
+
+  # Optional: diary image picker
+  # pod 'TZImagePickerController', '~> 3.8.12'
+end

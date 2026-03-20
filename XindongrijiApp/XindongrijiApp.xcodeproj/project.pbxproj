@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		109E518473874A3183BD946A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63B7D06533272AA0B68D863 /* Foundation.framework */; };
+		1D13AB24CDC651B410886C2C /* XDJAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9BF3E5AA603B200B2C4CBA /* XDJAppConfig.m */; };
+		1D77E7E4D35274EB96505A30 /* DiaryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFADF226B4AB38CE7A202F5 /* DiaryListViewController.m */; };
+		20FE9EA239781A71A1CD872B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB456D802A08D46A8D0F07 /* LaunchScreen.storyboard */; };
+		26C0706FC13771C021465085 /* AppRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A04E1347C49A6A416FB2E /* AppRouter.m */; };
+		325AE6BE45F6E4BB3A8EBD59 /* DiaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6AA6B1457D4FFCD904C819 /* DiaryModel.m */; };
+		34B52968BAD535601BAD590A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57614AB324FA43482D7641C4 /* LoginViewController.m */; };
+		3B88031F0D87ED3BF12A70CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71123CE5E056BA6568801B5D /* main.m */; };
+		3BE6E7AF7BFF03525719AB98 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92DE123E1118C24DFA6739F /* MainTabBarController.m */; };
+		3ED25F3C77DCA5B990A995CC /* DiaryEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92676A31C7B9B31E5607B12 /* DiaryEditViewController.m */; };
+		46A1AEE089C2E4B729AE2BD9 /* XDJDiaryService.m in Sources */ = {isa = PBXBuildFile; fileRef = E7612D69A3C3F8B83F3AB640 /* XDJDiaryService.m */; };
+		489A820F9896D6AA9FBCD941 /* XDJTagService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573F823A4E02C46AD779D37 /* XDJTagService.m */; };
+		557CED0DE1E370E19BC17E99 /* XDJUserCacheStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C650A5B422D2015120F15B /* XDJUserCacheStore.m */; };
+		57BA0372A811645A640217C4 /* ToastUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 59432E8DB49F1A38DBBB16F2 /* ToastUtils.m */; };
+		57DFFED342C27F79F77F4883 /* XDJAuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBF04A0B81743C7A1BBE81 /* XDJAuthService.m */; };
+		5BF87AD5D03330BFD3DA6E24 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB53057C969EE78289D3F184 /* SceneDelegate.m */; };
+		653BEFD9C0EDA06CCE8B7906 /* XindongrijiApp.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = E71D0D0AADA23B6B529DE9E9 /* XindongrijiApp.xcdatamodeld */; };
+		70B7E1D69866DFF0146BFBD1 /* FormValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFE77A25D53194B5AB61851 /* FormValidator.m */; };
+		73E8F4DD0277F3B33AAF93F5 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D772BE5C79AF26B66AB3FDD1 /* CoreDataManager.m */; };
+		7A616D7677398BCCD3CA791A /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC396FEE352AA2B830C87759 /* ProfileViewController.m */; };
+		7D681C148CBF4D5ECD906A25 /* TagManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC137D29FC5EF2C01BBC2F65 /* TagManagerViewController.m */; };
+		7F60CE1EA5ABF32AF3CE457F /* XDJTag.m in Sources */ = {isa = PBXBuildFile; fileRef = A30F57C814FCF358B8F95748 /* XDJTag.m */; };
+		82B7A75777831005C8B1C32E /* XDJAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 53694762AC60C646DCAFA3C7 /* XDJAPIClient.m */; };
+		8A962776DFD1BC519A64D827 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEF0C1AC42F8D2936347103 /* RegisterViewController.m */; };
+		8DA4CAADE0FA06CEA35E0760 /* DateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C87293984A33E4AE844E55E /* DateUtils.m */; };
+		8F74969F615694647B14B8D3 /* Pods_XindongrijiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C094442156D8F288714B3D /* Pods_XindongrijiApp.framework */; };
+		8F7FA73109D0002521008B52 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A63E4669BB76F721AA15A1D /* UserModel.m */; };
+		8FC83E1F253E068910A71C04 /* TokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EB786A3D7D19E4A7D8A2CE /* TokenManager.m */; };
+		91BD172558362D159D73F8BB /* XDJValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0DFA77887A31D1367327B /* XDJValidator.m */; };
+		9E12BA568078DDF76A351D7E /* UIViewController+XDJHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D804C40B8FCA6A69CD6E09D /* UIViewController+XDJHUD.m */; };
+		A6645C5BF3BED14287509688 /* XDJDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 456613AE2C70921C61BE548B /* XDJDateHelper.m */; };
+		A80CF7A7DF88542CDDC39B04 /* XDJDiary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A85FBC52262991E32FA61DB /* XDJDiary.m */; };
+		B343BDB2F56E289E4A512A95 /* DiaryEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF468DAC399637DB3C22F93 /* DiaryEditorViewController.m */; };
+		B9EE93F73B7BD3F6FA1963A8 /* XDJDiaryCacheStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9D930F832B4DB8A9C8E81A /* XDJDiaryCacheStore.m */; };
+		BC0E1013AC37CD0AD5492033 /* XDJCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AEA4B60D1411FCDBFE248E /* XDJCoreDataStack.m */; };
+		C45C51CE4BB82D5DC63CFA8B /* XDJPageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CC7BE4E4D44345E706CD7F /* XDJPageResponse.m */; };
+		D43D7FFA5FB66DC95CF5DEC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4742463ADBD1755AE69C150 /* AppDelegate.m */; };
+		D6D28BA5F90707294A1E641C /* XDJBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 70430A26BCC84A7FA8C77F4D /* XDJBaseResponse.m */; };
+		E1DFA666B7110E3DCBAC368D /* XDJLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F295210B313DADB2F9D818 /* XDJLoginResponse.m */; };
+		E1E4B0AA2D7B5E5D23364CFA /* TagManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DDF385DD5D67E4AE093C57 /* TagManageViewController.m */; };
+		E40B3E1E4EBD3E706ECD0D4E /* XDJUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE859D0867E238B85FC22F46 /* XDJUser.m */; };
+		E621D0CE33E196AEB7C628C2 /* TagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 706CD082ACE8A756F365ED40 /* TagModel.m */; };
+		E95D4030915730EF1D05A9AC /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4EE48A7EF2D7330BB7965B /* HTTPClient.m */; };
+		F41140B4C555B25C2EF7F438 /* XDJSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC62BDB74C6626F7ACD7A6 /* XDJSessionManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00DC6895DD3E0807F87DB718 /* TagManagerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TagManagerViewController.h; path = ViewController/Tag/TagManagerViewController.h; sourceTree = "<group>"; };
+		02CDC1665F21E04D3F094CA0 /* TokenManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TokenManager.h; path = Utils/TokenManager.h; sourceTree = "<group>"; };
+		03BB456D802A08D46A8D0F07 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Resource/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04DE4DE7922BD1E500C450F6 /* XDJDateHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJDateHelper.h; path = Utils/XDJDateHelper.h; sourceTree = "<group>"; };
+		06135882AE9DBAD8A1E02322 /* UserModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UserModel.h; path = Model/UserModel.h; sourceTree = "<group>"; };
+		08BC62BDB74C6626F7ACD7A6 /* XDJSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJSessionManager.m; path = Utils/XDJSessionManager.m; sourceTree = "<group>"; };
+		0C87293984A33E4AE844E55E /* DateUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DateUtils.m; path = Utils/DateUtils.m; sourceTree = "<group>"; };
+		11CC7BE4E4D44345E706CD7F /* XDJPageResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJPageResponse.m; path = Model/XDJPageResponse.m; sourceTree = "<group>"; };
+		1439E0642254EE6F68D5FC60 /* TagManageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TagManageViewController.h; path = ViewController/Tag/TagManageViewController.h; sourceTree = "<group>"; };
+		182A04E1347C49A6A416FB2E /* AppRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AppRouter.m; path = Utils/AppRouter.m; sourceTree = "<group>"; };
+		18A476F34402E81D3CA0A93F /* Pods-XindongrijiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XindongrijiApp.debug.xcconfig"; path = "Target Support Files/Pods-XindongrijiApp/Pods-XindongrijiApp.debug.xcconfig"; sourceTree = "<group>"; };
+		18F295210B313DADB2F9D818 /* XDJLoginResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJLoginResponse.m; path = Model/XDJLoginResponse.m; sourceTree = "<group>"; };
+		1D16E54CD1ACEB2B6F46CB15 /* XDJAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJAPIClient.h; path = Network/XDJAPIClient.h; sourceTree = "<group>"; };
+		1D9BF3E5AA603B200B2C4CBA /* XDJAppConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJAppConfig.m; path = Utils/XDJAppConfig.m; sourceTree = "<group>"; };
+		238AE5EBCDA8B4E1A423C21D /* DateUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateUtils.h; path = Utils/DateUtils.h; sourceTree = "<group>"; };
+		27DDF385DD5D67E4AE093C57 /* TagManageViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TagManageViewController.m; path = ViewController/Tag/TagManageViewController.m; sourceTree = "<group>"; };
+		2DFF0CE79789CF5A8241B466 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resource/Info.plist; sourceTree = "<group>"; };
+		3836454B1F6F1A04B9421B55 /* XDJTag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJTag.h; path = Model/XDJTag.h; sourceTree = "<group>"; };
+		39BFE6B61F44A1F0BE6E3C1B /* XDJDiaryCacheStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJDiaryCacheStore.h; path = DB/XDJDiaryCacheStore.h; sourceTree = "<group>"; };
+		39D01FFF3D4A48E365378C39 /* XDJBaseResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJBaseResponse.h; path = Model/XDJBaseResponse.h; sourceTree = "<group>"; };
+		3A5C8E044CB4E6D227CB5A93 /* LoginViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ViewController/Auth/LoginViewController.h; sourceTree = "<group>"; };
+		3E6AA6B1457D4FFCD904C819 /* DiaryModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DiaryModel.m; path = Model/DiaryModel.m; sourceTree = "<group>"; };
+		3EA6F051C91954595ADC8D46 /* DiaryEditorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiaryEditorViewController.h; path = ViewController/Diary/DiaryEditorViewController.h; sourceTree = "<group>"; };
+		3EEF0C1AC42F8D2936347103 /* RegisterViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = ViewController/Auth/RegisterViewController.m; sourceTree = "<group>"; };
+		456613AE2C70921C61BE548B /* XDJDateHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJDateHelper.m; path = Utils/XDJDateHelper.m; sourceTree = "<group>"; };
+		4A422758DC72A534366ABBA3 /* XDJSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJSessionManager.h; path = Utils/XDJSessionManager.h; sourceTree = "<group>"; };
+		4B4EE48A7EF2D7330BB7965B /* HTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPClient.m; path = Network/HTTPClient.m; sourceTree = "<group>"; };
+		4E77DE676FA5D1FD3DBBA0B2 /* AppRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppRouter.h; path = Utils/AppRouter.h; sourceTree = "<group>"; };
+		4FDA40BD6DCF136840045849 /* XDJDiary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJDiary.h; path = Model/XDJDiary.h; sourceTree = "<group>"; };
+		52AC83A2DC8F3BE0DF5FE5B9 /* AppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53694762AC60C646DCAFA3C7 /* XDJAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJAPIClient.m; path = Network/XDJAPIClient.m; sourceTree = "<group>"; };
+		5573F823A4E02C46AD779D37 /* XDJTagService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJTagService.m; path = Network/XDJTagService.m; sourceTree = "<group>"; };
+		57614AB324FA43482D7641C4 /* LoginViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ViewController/Auth/LoginViewController.m; sourceTree = "<group>"; };
+		58C094442156D8F288714B3D /* Pods_XindongrijiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XindongrijiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59432E8DB49F1A38DBBB16F2 /* ToastUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ToastUtils.m; path = Utils/ToastUtils.m; sourceTree = "<group>"; };
+		5A63E4669BB76F721AA15A1D /* UserModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UserModel.m; path = Model/UserModel.m; sourceTree = "<group>"; };
+		5AF468DAC399637DB3C22F93 /* DiaryEditorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DiaryEditorViewController.m; path = ViewController/Diary/DiaryEditorViewController.m; sourceTree = "<group>"; };
+		5D804C40B8FCA6A69CD6E09D /* UIViewController+XDJHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+XDJHUD.m"; path = "Utils/UIViewController+XDJHUD.m"; sourceTree = "<group>"; };
+		5DFEACF191743D44FE70AF43 /* XDJLoginResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJLoginResponse.h; path = Model/XDJLoginResponse.h; sourceTree = "<group>"; };
+		62EBA8C2D2058A3268B448E3 /* XDJDiaryService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJDiaryService.h; path = Network/XDJDiaryService.h; sourceTree = "<group>"; };
+		66CBF04A0B81743C7A1BBE81 /* XDJAuthService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJAuthService.m; path = Network/XDJAuthService.m; sourceTree = "<group>"; };
+		70430A26BCC84A7FA8C77F4D /* XDJBaseResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJBaseResponse.m; path = Model/XDJBaseResponse.m; sourceTree = "<group>"; };
+		706CD082ACE8A756F365ED40 /* TagModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TagModel.m; path = Model/TagModel.m; sourceTree = "<group>"; };
+		71123CE5E056BA6568801B5D /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		719CA4ED6A7EAB294936480A /* XDJUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJUser.h; path = Model/XDJUser.h; sourceTree = "<group>"; };
+		74C9EBF12D1C6F4471409846 /* RegisterViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = ViewController/Auth/RegisterViewController.h; sourceTree = "<group>"; };
+		7983DE43EAA5930DBD3D97D0 /* SceneDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		832AC1574D1FBDB2387A07BB /* HTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPClient.h; path = Network/HTTPClient.h; sourceTree = "<group>"; };
+		85D28D15556B7E9949781970 /* CoreDataManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoreDataManager.h; path = DB/CoreDataManager.h; sourceTree = "<group>"; };
+		88AEA4B60D1411FCDBFE248E /* XDJCoreDataStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJCoreDataStack.m; path = DB/XDJCoreDataStack.m; sourceTree = "<group>"; };
+		8F084EF84042A62A0FE63ABD /* XDJAuthService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJAuthService.h; path = Network/XDJAuthService.h; sourceTree = "<group>"; };
+		92E832DA991FDCC02AABAA28 /* XDJAppConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJAppConfig.h; path = Utils/XDJAppConfig.h; sourceTree = "<group>"; };
+		934467C4AE07BDE634143340 /* DiaryModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiaryModel.h; path = Model/DiaryModel.h; sourceTree = "<group>"; };
+		936157BAB95D288AFB071C6E /* XDJTagService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJTagService.h; path = Network/XDJTagService.h; sourceTree = "<group>"; };
+		96C650A5B422D2015120F15B /* XDJUserCacheStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJUserCacheStore.m; path = DB/XDJUserCacheStore.m; sourceTree = "<group>"; };
+		96CA91BC9277582E9C396D1C /* XDJPageResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJPageResponse.h; path = Model/XDJPageResponse.h; sourceTree = "<group>"; };
+		9962B3996638BCAEE4E0AA52 /* ToastUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ToastUtils.h; path = Utils/ToastUtils.h; sourceTree = "<group>"; };
+		9A85FBC52262991E32FA61DB /* XDJDiary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJDiary.m; path = Model/XDJDiary.m; sourceTree = "<group>"; };
+		9CFADF226B4AB38CE7A202F5 /* DiaryListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DiaryListViewController.m; path = ViewController/Diary/DiaryListViewController.m; sourceTree = "<group>"; };
+		A30F57C814FCF358B8F95748 /* XDJTag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJTag.m; path = Model/XDJTag.m; sourceTree = "<group>"; };
+		A8C4A3000AB9FDAC2873E9A4 /* XDJValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJValidator.h; path = Utils/XDJValidator.h; sourceTree = "<group>"; };
+		A92676A31C7B9B31E5607B12 /* DiaryEditViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DiaryEditViewController.m; path = ViewController/Diary/DiaryEditViewController.m; sourceTree = "<group>"; };
+		AC396FEE352AA2B830C87759 /* ProfileViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = ViewController/Profile/ProfileViewController.m; sourceTree = "<group>"; };
+		AF9D930F832B4DB8A9C8E81A /* XDJDiaryCacheStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJDiaryCacheStore.m; path = DB/XDJDiaryCacheStore.m; sourceTree = "<group>"; };
+		BA0405F9E4BDF23187E64852 /* MainTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MainTabBarController.h; path = ViewController/MainTabBarController.h; sourceTree = "<group>"; };
+		BC137D29FC5EF2C01BBC2F65 /* TagManagerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TagManagerViewController.m; path = ViewController/Tag/TagManagerViewController.m; sourceTree = "<group>"; };
+		C4CD746AA411613A6A28A0E8 /* XDJUserCacheStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJUserCacheStore.h; path = DB/XDJUserCacheStore.h; sourceTree = "<group>"; };
+		C63B7D06533272AA0B68D863 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CB53057C969EE78289D3F184 /* SceneDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		CE859D0867E238B85FC22F46 /* XDJUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJUser.m; path = Model/XDJUser.m; sourceTree = "<group>"; };
+		D09B3E6AC50D8611B4F6DE18 /* FormValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FormValidator.h; path = Utils/FormValidator.h; sourceTree = "<group>"; };
+		D18F2237CE95A54929D476AD /* XindongrijiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XindongrijiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4742463ADBD1755AE69C150 /* AppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D47A40D8127AA2E73DB8A980 /* TagModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TagModel.h; path = Model/TagModel.h; sourceTree = "<group>"; };
+		D4EB786A3D7D19E4A7D8A2CE /* TokenManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TokenManager.m; path = Utils/TokenManager.m; sourceTree = "<group>"; };
+		D772BE5C79AF26B66AB3FDD1 /* CoreDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoreDataManager.m; path = DB/CoreDataManager.m; sourceTree = "<group>"; };
+		D8E661FE4252F4688BC207B7 /* DiaryEditViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiaryEditViewController.h; path = ViewController/Diary/DiaryEditViewController.h; sourceTree = "<group>"; };
+		DFFE77A25D53194B5AB61851 /* FormValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FormValidator.m; path = Utils/FormValidator.m; sourceTree = "<group>"; };
+		E032E5F17EFCED49EC6E5F4B /* UIViewController+XDJHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+XDJHUD.h"; path = "Utils/UIViewController+XDJHUD.h"; sourceTree = "<group>"; };
+		E0B314216333BB3DA4DAEA5F /* XDJCoreDataStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJCoreDataStack.h; path = DB/XDJCoreDataStack.h; sourceTree = "<group>"; };
+		E6050570740183A8C5C49A6E /* DiaryListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiaryListViewController.h; path = ViewController/Diary/DiaryListViewController.h; sourceTree = "<group>"; };
+		E7612D69A3C3F8B83F3AB640 /* XDJDiaryService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJDiaryService.m; path = Network/XDJDiaryService.m; sourceTree = "<group>"; };
+		E89C49A2B324AB5B9355227A /* Pods-XindongrijiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XindongrijiApp.release.xcconfig"; path = "Target Support Files/Pods-XindongrijiApp/Pods-XindongrijiApp.release.xcconfig"; sourceTree = "<group>"; };
+		EDAA161046F26C73DE1AD8B9 /* ProfileViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = ViewController/Profile/ProfileViewController.h; sourceTree = "<group>"; };
+		F1B0DFA77887A31D1367327B /* XDJValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XDJValidator.m; path = Utils/XDJValidator.m; sourceTree = "<group>"; };
+		F92DE123E1118C24DFA6739F /* MainTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MainTabBarController.m; path = ViewController/MainTabBarController.m; sourceTree = "<group>"; };
+		FE49144D7BCA88B67E71393A /* XDJNetworkDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XDJNetworkDefines.h; path = Network/XDJNetworkDefines.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7AED5593F0155BC3FA74537 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				109E518473874A3183BD946A /* Foundation.framework in Frameworks */,
+				8F74969F615694647B14B8D3 /* Pods_XindongrijiApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C0E26B3D3399EAB17B9864 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3A5C8E044CB4E6D227CB5A93 /* LoginViewController.h */,
+				57614AB324FA43482D7641C4 /* LoginViewController.m */,
+				74C9EBF12D1C6F4471409846 /* RegisterViewController.h */,
+				3EEF0C1AC42F8D2936347103 /* RegisterViewController.m */,
+			);
+			name = Auth;
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1AB6F1A267F7C1A7A5309B76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E89C49A2B324AB5B9355227A /* Pods-XindongrijiApp.release.xcconfig */,
+				18A476F34402E81D3CA0A93F /* Pods-XindongrijiApp.debug.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1B6CD1FC2A2EACDE1923394B = {
+			isa = PBXGroup;
+			children = (
+				84A6D3FA7E60E20B96EC3D3E /* Products */,
+				CB578FFBF1D141EB0DA09AE8 /* Frameworks */,
+				DAFECA33ECA4E060BC567DA3 /* XindongrijiApp */,
+				1AB6F1A267F7C1A7A5309B76 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		38D5E672D5033B4D500FB199 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA161046F26C73DE1AD8B9 /* ProfileViewController.h */,
+				AC396FEE352AA2B830C87759 /* ProfileViewController.m */,
+			);
+			name = Profile;
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		401A1649A394FEF286340B3D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4E77DE676FA5D1FD3DBBA0B2 /* AppRouter.h */,
+				182A04E1347C49A6A416FB2E /* AppRouter.m */,
+				238AE5EBCDA8B4E1A423C21D /* DateUtils.h */,
+				0C87293984A33E4AE844E55E /* DateUtils.m */,
+				D09B3E6AC50D8611B4F6DE18 /* FormValidator.h */,
+				DFFE77A25D53194B5AB61851 /* FormValidator.m */,
+				9962B3996638BCAEE4E0AA52 /* ToastUtils.h */,
+				59432E8DB49F1A38DBBB16F2 /* ToastUtils.m */,
+				02CDC1665F21E04D3F094CA0 /* TokenManager.h */,
+				D4EB786A3D7D19E4A7D8A2CE /* TokenManager.m */,
+				E032E5F17EFCED49EC6E5F4B /* UIViewController+XDJHUD.h */,
+				5D804C40B8FCA6A69CD6E09D /* UIViewController+XDJHUD.m */,
+				92E832DA991FDCC02AABAA28 /* XDJAppConfig.h */,
+				1D9BF3E5AA603B200B2C4CBA /* XDJAppConfig.m */,
+				04DE4DE7922BD1E500C450F6 /* XDJDateHelper.h */,
+				456613AE2C70921C61BE548B /* XDJDateHelper.m */,
+				4A422758DC72A534366ABBA3 /* XDJSessionManager.h */,
+				08BC62BDB74C6626F7ACD7A6 /* XDJSessionManager.m */,
+				A8C4A3000AB9FDAC2873E9A4 /* XDJValidator.h */,
+				F1B0DFA77887A31D1367327B /* XDJValidator.m */,
+			);
+			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		84A6D3FA7E60E20B96EC3D3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D18F2237CE95A54929D476AD /* XindongrijiApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3E1630211FCFC2D2D485BB9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				19C0E26B3D3399EAB17B9864 /* Auth */,
+				BA16B0645122EAE83CE761E1 /* Diary */,
+				BA0405F9E4BDF23187E64852 /* MainTabBarController.h */,
+				F92DE123E1118C24DFA6739F /* MainTabBarController.m */,
+				38D5E672D5033B4D500FB199 /* Profile */,
+				D0FC30166739A516D358E793 /* Tag */,
+			);
+			name = ViewController;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BA16B0645122EAE83CE761E1 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				D8E661FE4252F4688BC207B7 /* DiaryEditViewController.h */,
+				A92676A31C7B9B31E5607B12 /* DiaryEditViewController.m */,
+				3EA6F051C91954595ADC8D46 /* DiaryEditorViewController.h */,
+				5AF468DAC399637DB3C22F93 /* DiaryEditorViewController.m */,
+				E6050570740183A8C5C49A6E /* DiaryListViewController.h */,
+				9CFADF226B4AB38CE7A202F5 /* DiaryListViewController.m */,
+			);
+			name = Diary;
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		C6A15B06CEDF94D6F4473FC0 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				85D28D15556B7E9949781970 /* CoreDataManager.h */,
+				D772BE5C79AF26B66AB3FDD1 /* CoreDataManager.m */,
+				E0B314216333BB3DA4DAEA5F /* XDJCoreDataStack.h */,
+				88AEA4B60D1411FCDBFE248E /* XDJCoreDataStack.m */,
+				39BFE6B61F44A1F0BE6E3C1B /* XDJDiaryCacheStore.h */,
+				AF9D930F832B4DB8A9C8E81A /* XDJDiaryCacheStore.m */,
+				C4CD746AA411613A6A28A0E8 /* XDJUserCacheStore.h */,
+				96C650A5B422D2015120F15B /* XDJUserCacheStore.m */,
+				E71D0D0AADA23B6B529DE9E9 /* XindongrijiApp.xcdatamodeld */,
+			);
+			name = DB;
+			path = DB;
+			sourceTree = "<group>";
+		};
+		CB578FFBF1D141EB0DA09AE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD958B9A6219D86E4C932F63 /* iOS */,
+				58C094442156D8F288714B3D /* Pods_XindongrijiApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D09C329ED1A5EA82C509816D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DDF7F7326B20657A64DADAD4 /* Base.lproj */,
+				2DFF0CE79789CF5A8241B466 /* Info.plist */,
+			);
+			name = Resource;
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D0FC30166739A516D358E793 /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				1439E0642254EE6F68D5FC60 /* TagManageViewController.h */,
+				27DDF385DD5D67E4AE093C57 /* TagManageViewController.m */,
+				00DC6895DD3E0807F87DB718 /* TagManagerViewController.h */,
+				BC137D29FC5EF2C01BBC2F65 /* TagManagerViewController.m */,
+			);
+			name = Tag;
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		DAFECA33ECA4E060BC567DA3 /* XindongrijiApp */ = {
+			isa = PBXGroup;
+			children = (
+				52AC83A2DC8F3BE0DF5FE5B9 /* AppDelegate.h */,
+				D4742463ADBD1755AE69C150 /* AppDelegate.m */,
+				C6A15B06CEDF94D6F4473FC0 /* DB */,
+				DD3801AD0190BF41B40A1B7D /* Model */,
+				FBA9BCD8F275D382F470C228 /* Network */,
+				D09C329ED1A5EA82C509816D /* Resource */,
+				7983DE43EAA5930DBD3D97D0 /* SceneDelegate.h */,
+				CB53057C969EE78289D3F184 /* SceneDelegate.m */,
+				401A1649A394FEF286340B3D /* Utils */,
+				B3E1630211FCFC2D2D485BB9 /* ViewController */,
+				71123CE5E056BA6568801B5D /* main.m */,
+			);
+			name = XindongrijiApp;
+			path = XindongrijiApp;
+			sourceTree = "<group>";
+		};
+		DD3801AD0190BF41B40A1B7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				934467C4AE07BDE634143340 /* DiaryModel.h */,
+				3E6AA6B1457D4FFCD904C819 /* DiaryModel.m */,
+				D47A40D8127AA2E73DB8A980 /* TagModel.h */,
+				706CD082ACE8A756F365ED40 /* TagModel.m */,
+				06135882AE9DBAD8A1E02322 /* UserModel.h */,
+				5A63E4669BB76F721AA15A1D /* UserModel.m */,
+				39D01FFF3D4A48E365378C39 /* XDJBaseResponse.h */,
+				70430A26BCC84A7FA8C77F4D /* XDJBaseResponse.m */,
+				4FDA40BD6DCF136840045849 /* XDJDiary.h */,
+				9A85FBC52262991E32FA61DB /* XDJDiary.m */,
+				5DFEACF191743D44FE70AF43 /* XDJLoginResponse.h */,
+				18F295210B313DADB2F9D818 /* XDJLoginResponse.m */,
+				96CA91BC9277582E9C396D1C /* XDJPageResponse.h */,
+				11CC7BE4E4D44345E706CD7F /* XDJPageResponse.m */,
+				3836454B1F6F1A04B9421B55 /* XDJTag.h */,
+				A30F57C814FCF358B8F95748 /* XDJTag.m */,
+				719CA4ED6A7EAB294936480A /* XDJUser.h */,
+				CE859D0867E238B85FC22F46 /* XDJUser.m */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD958B9A6219D86E4C932F63 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C63B7D06533272AA0B68D863 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DDF7F7326B20657A64DADAD4 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				03BB456D802A08D46A8D0F07 /* LaunchScreen.storyboard */,
+			);
+			name = Base.lproj;
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		FBA9BCD8F275D382F470C228 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				832AC1574D1FBDB2387A07BB /* HTTPClient.h */,
+				4B4EE48A7EF2D7330BB7965B /* HTTPClient.m */,
+				1D16E54CD1ACEB2B6F46CB15 /* XDJAPIClient.h */,
+				53694762AC60C646DCAFA3C7 /* XDJAPIClient.m */,
+				8F084EF84042A62A0FE63ABD /* XDJAuthService.h */,
+				66CBF04A0B81743C7A1BBE81 /* XDJAuthService.m */,
+				62EBA8C2D2058A3268B448E3 /* XDJDiaryService.h */,
+				E7612D69A3C3F8B83F3AB640 /* XDJDiaryService.m */,
+				FE49144D7BCA88B67E71393A /* XDJNetworkDefines.h */,
+				936157BAB95D288AFB071C6E /* XDJTagService.h */,
+				5573F823A4E02C46AD779D37 /* XDJTagService.m */,
+			);
+			name = Network;
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B25B87C659A50E3881E46143 /* XindongrijiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25F6D738ADFDB4C4B6B80684 /* Build configuration list for PBXNativeTarget "XindongrijiApp" */;
+			buildPhases = (
+				F4E50F5D83BF771A5C33C89E /* [CP] Check Pods Manifest.lock */,
+				B5371BFFAFACE84E381489C2 /* Sources */,
+				B7AED5593F0155BC3FA74537 /* Frameworks */,
+				1DFC7509B37D33CF259FB3D6 /* Resources */,
+				B60B98B4D59FDF282E30AA7C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XindongrijiApp;
+			productName = XindongrijiApp;
+			productReference = D18F2237CE95A54929D476AD /* XindongrijiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FC812685C56F44F89B3449F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 9C6B64653D4E6072EFDF3C2D /* Build configuration list for PBXProject "XindongrijiApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B6CD1FC2A2EACDE1923394B;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 84A6D3FA7E60E20B96EC3D3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B25B87C659A50E3881E46143 /* XindongrijiApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DFC7509B37D33CF259FB3D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653BEFD9C0EDA06CCE8B7906 /* XindongrijiApp.xcdatamodeld in Resources */,
+				20FE9EA239781A71A1CD872B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B60B98B4D59FDF282E30AA7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XindongrijiApp/Pods-XindongrijiApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XindongrijiApp/Pods-XindongrijiApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4E50F5D83BF771A5C33C89E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XindongrijiApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5371BFFAFACE84E381489C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D43D7FFA5FB66DC95CF5DEC3 /* AppDelegate.m in Sources */,
+				73E8F4DD0277F3B33AAF93F5 /* CoreDataManager.m in Sources */,
+				BC0E1013AC37CD0AD5492033 /* XDJCoreDataStack.m in Sources */,
+				B9EE93F73B7BD3F6FA1963A8 /* XDJDiaryCacheStore.m in Sources */,
+				557CED0DE1E370E19BC17E99 /* XDJUserCacheStore.m in Sources */,
+				325AE6BE45F6E4BB3A8EBD59 /* DiaryModel.m in Sources */,
+				E621D0CE33E196AEB7C628C2 /* TagModel.m in Sources */,
+				8F7FA73109D0002521008B52 /* UserModel.m in Sources */,
+				D6D28BA5F90707294A1E641C /* XDJBaseResponse.m in Sources */,
+				A80CF7A7DF88542CDDC39B04 /* XDJDiary.m in Sources */,
+				E1DFA666B7110E3DCBAC368D /* XDJLoginResponse.m in Sources */,
+				C45C51CE4BB82D5DC63CFA8B /* XDJPageResponse.m in Sources */,
+				7F60CE1EA5ABF32AF3CE457F /* XDJTag.m in Sources */,
+				E40B3E1E4EBD3E706ECD0D4E /* XDJUser.m in Sources */,
+				E95D4030915730EF1D05A9AC /* HTTPClient.m in Sources */,
+				82B7A75777831005C8B1C32E /* XDJAPIClient.m in Sources */,
+				57DFFED342C27F79F77F4883 /* XDJAuthService.m in Sources */,
+				46A1AEE089C2E4B729AE2BD9 /* XDJDiaryService.m in Sources */,
+				489A820F9896D6AA9FBCD941 /* XDJTagService.m in Sources */,
+				5BF87AD5D03330BFD3DA6E24 /* SceneDelegate.m in Sources */,
+				26C0706FC13771C021465085 /* AppRouter.m in Sources */,
+				8DA4CAADE0FA06CEA35E0760 /* DateUtils.m in Sources */,
+				70B7E1D69866DFF0146BFBD1 /* FormValidator.m in Sources */,
+				57BA0372A811645A640217C4 /* ToastUtils.m in Sources */,
+				8FC83E1F253E068910A71C04 /* TokenManager.m in Sources */,
+				9E12BA568078DDF76A351D7E /* UIViewController+XDJHUD.m in Sources */,
+				1D13AB24CDC651B410886C2C /* XDJAppConfig.m in Sources */,
+				A6645C5BF3BED14287509688 /* XDJDateHelper.m in Sources */,
+				F41140B4C555B25C2EF7F438 /* XDJSessionManager.m in Sources */,
+				91BD172558362D159D73F8BB /* XDJValidator.m in Sources */,
+				34B52968BAD535601BAD590A /* LoginViewController.m in Sources */,
+				8A962776DFD1BC519A64D827 /* RegisterViewController.m in Sources */,
+				3ED25F3C77DCA5B990A995CC /* DiaryEditViewController.m in Sources */,
+				B343BDB2F56E289E4A512A95 /* DiaryEditorViewController.m in Sources */,
+				1D77E7E4D35274EB96505A30 /* DiaryListViewController.m in Sources */,
+				3BE6E7AF7BFF03525719AB98 /* MainTabBarController.m in Sources */,
+				7A616D7677398BCCD3CA791A /* ProfileViewController.m in Sources */,
+				E1E4B0AA2D7B5E5D23364CFA /* TagManageViewController.m in Sources */,
+				7D681C148CBF4D5ECD906A25 /* TagManagerViewController.m in Sources */,
+				3B88031F0D87ED3BF12A70CA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0D4E8EAA56EFFC41A2DCE332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6B24970B2EE5462A22BB5049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E89C49A2B324AB5B9355227A /* Pods-XindongrijiApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = XindongrijiApp/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xindongriji.XindongrijiApp;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/XindongrijiApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8351B652B6A574B0DA1814DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C0B3B6CAC9CB9D8479BE9EE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18A476F34402E81D3CA0A93F /* Pods-XindongrijiApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = XindongrijiApp/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xindongriji.XindongrijiApp;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/XindongrijiApp";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25F6D738ADFDB4C4B6B80684 /* Build configuration list for PBXNativeTarget "XindongrijiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B24970B2EE5462A22BB5049 /* Release */,
+				C0B3B6CAC9CB9D8479BE9EE6 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C6B64653D4E6072EFDF3C2D /* Build configuration list for PBXProject "XindongrijiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4E8EAA56EFFC41A2DCE332 /* Debug */,
+				8351B652B6A574B0DA1814DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E71D0D0AADA23B6B529DE9E9 /* XindongrijiApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+			);
+			name = XindongrijiApp.xcdatamodeld;
+			path = DB/XindongrijiApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3FC812685C56F44F89B3449F /* Project object */;
+}
